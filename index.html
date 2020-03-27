@@ -1,0 +1,24 @@
+<html>
+   <head></head>
+   <body>
+      <p>
+         Redirecting to <a href="https://mobihack.me/">mobihack.me</a> after <span id="c">3</span> seconds. If you are not redirected in 3 seconds, <a href="https://mobihack.me/">click here</a>.
+      </p>
+      <script type="text/javascript">
+         var s = 3;
+         function c() {
+             s = s - 1;
+             if (s < 0) {
+                 window.location = "https://mobihack.me/";
+             } else {
+                 document.getElementById("c").innerHTML = seconds;
+                 window.setTimeout("c()", 1000);
+             }
+         }
+         
+         // Run countdown function
+         countdown();
+         
+      </script>
+   </body>
+</html>
