@@ -5,6 +5,7 @@
          Redirecting to <a href="https://mobihack.me/">mobihack.me</a> after <span id="c">3</span> seconds. If you are not redirected in 3 seconds, <a href="https://mobihack.me/">click here</a>.
       </p>
       <script type="text/javascript">
+         // Code from https://gist.github.com/Joel-James/62d98e8cb3a1b6b05102
          var s = 3;
          function c() {
              s = s - 1;
@@ -15,8 +16,6 @@
                  window.setTimeout("c()", 1000);
              }
          }
-         
-         // Run countdown function
          c();
          
       </script>
